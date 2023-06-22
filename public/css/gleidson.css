@@ -16,6 +16,7 @@
   --gray2: #5c5c5c;
   --gray3: #303030;
   --pink: #c61067;
+  --pink2: #a31057;
   --white: #ffffff;
 }
 
@@ -83,6 +84,33 @@ hr {
   margin-top: 64px;
 }
 
+#teams h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#teams h3 button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--pink);
+    fill: var(--white);
+    border-radius: 8px;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: bold;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  #teams h3 button:hover {
+    background-color: var(--pink2);
+  }
+  #teams h3 button box-icon {
+    fill: var(--white);
+  }
 #teams ul {
   margin-top: 32px;
   display: flex;
