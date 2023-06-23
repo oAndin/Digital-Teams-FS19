@@ -2,6 +2,10 @@
     header {
         padding: 16px 16px;
     }
+    header .logo figure img {
+        width: 100%;
+        object-fit: contain;
+    }
     #teams {
         padding: 16px 16px;
         margin-top: 0;
@@ -48,12 +52,14 @@
 
 @media screen and (min-width:1440px) {
     #teams ul li {
-        width: calc(25% - 12px);
+        width: calc(20% - 13px);
     }
 }
 
 @media screen and (min-width:2560px){
     #teams ul li {
         width: calc(20% - 13px);
+        
     }
+    
 }
