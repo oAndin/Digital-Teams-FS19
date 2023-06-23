@@ -1,0 +1,59 @@
+@media screen and (max-width: 390px) { 
+    header {
+        padding: 16px 16px;
+    }
+    #teams {
+        padding: 16px 16px;
+        margin-top: 0;
+    }
+    #teams ul {
+        gap:32px;
+    }
+    #teams ul li {
+        width: 100%;
+    }
+
+    #teams h3 {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (min-width:391px) {
+    header {
+        width: 100%;
+        padding: 16px 16px;
+    }
+
+    #teams {
+        padding: 16px 16px;
+        margin-top: 0;
+    }
+    #teams ul li {
+        width: calc(50% - 8px);
+    }
+}
+
+@media screen and (min-width:641px) {
+    #teams ul li {
+        width: calc(25% - 12px);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #teams ul li {
+        width: calc(33% - 8px);
+    }
+}
+
+@media screen and (min-width:1440px) {
+    #teams ul li {
+        width: calc(25% - 12px);
+    }
+}
+
+@media screen and (min-width:2560px){
+    #teams ul li {
+        width: calc(20% - 13px);
+    }
+}
