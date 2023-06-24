@@ -135,7 +135,7 @@ header .search box-icon:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   padding: 16px;
   width: calc(20% - 13px);
   border-radius: 8px;
