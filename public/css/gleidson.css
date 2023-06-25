@@ -194,3 +194,46 @@ header .search box-icon:hover {
 #teams ul li div button box-icon {
   fill: var(--white);
 }
+
+/* - popup container --------------------------------------------------- */
+
+main #popup {
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 1rem;
+  position: absolute;
+  visibility: hidden;
+  z-index: 10;
+  background-color: var(--white);  
+  animation: popup 1.5s ease-in-out 1 normal;
+}
+main #popup #myBtn {
+  width: 20%;
+  height: 2rem;
+  border-radius: 1rem;
+  color: var(--white);
+  background-color: #222222;
+}
+
+main #popup #myBtn:hover{
+  cursor: pointer;
+  background-color: #000000;
+}
+
+@keyframes popup {
+  0% {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    width: 50%;
+    height: 50%;
+    visibility: visible;
+    opacity: 1;
+  }
+}
