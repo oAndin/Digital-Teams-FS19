@@ -14,7 +14,7 @@
 
 ::-webkit-scrollbar{
   width: 0.5rem;
-  
+
 }
 ::-webkit-scrollbar-thumb {
   background-color: #250415;
@@ -177,7 +177,7 @@ backdrop-filter: blur( 20px );
 }
 
 #teams ul li h4 {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   opacity: 0.7;
 }
 
@@ -226,7 +226,7 @@ backdrop-filter: blur( 20px );
   font-family: bold;
   transition: 0.3s ease-in-out;
   cursor: pointer;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 #teams ul li div button:hover {
@@ -295,4 +295,51 @@ main #popup #myBtn:hover {
     height: 50%;
     opacity: 1;
   }
+}
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  transition-duration: 0.2s;
+}
+
+#overlay.active {
+  opacity: .8;
+  visibility: visible;
+}
+
+#modal {
+  width: 400px;
+  padding: 1rem;
+  background-color: var(--gray1);
+  position: absolute;
+  top: 70%;
+  border-radius: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 0.2s;
+  transition-delay: 0.2s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#modal.active {
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form box-icon:hover{
+  cursor: pointer;
 }

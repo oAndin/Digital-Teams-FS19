@@ -1,23 +1,15 @@
 console.log("Hello World!");
 
-popupBtn.onclick=("openPopup", function() {
-    console.log("clickou");
-    if ((popup.style.visibility) === (popup.style.visibility = "hidden")) {
-        popup.style.visibility = "visible"
+btnCriarEquipe.onclick = function() {
+    overlay.classList.add('active');
+    modal.classList.add('active');
+}
+overlay.onclick = function() {
+    overlay.classList.remove('active');
+    modal.classList.remove('active');
+}
 
-    }
-    else {
-        ((popup.style.visibility) === (popup.style.visibility = "visible"))
-            popup.style.visibility = "hidden";
-        }
-    }
-    // if ((popup.style.visibility) == (popup.style.visibility = "visible")){
-    //     popup.style.visibility = "hidden"
-    // return console.log("Sim")
-    // }
-    // () ? :
-);
-    
-myBtn.onclick=("closePopUp", function closePopup() {
-    popup.style.visibility = 'hidden';
-});
+btnClose.onclick = function() {
+    overlay.classList.remove('active');
+    modal.classList.remove('active');
+}

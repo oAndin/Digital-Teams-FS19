@@ -20,7 +20,7 @@
     <main>
         <section id="teams">
             <h3>Equipes
-                <button id="popupBtn">
+                <button id="btnCriarEquipe">
                     Criar equipe
                     <box-icon name='plus'></box-icon>
                 </button>
@@ -69,13 +69,19 @@
                     </div>
                 </li>
             </ul>
-            <div id="popup" class="container">
-                <div id="info1"></div>
-                <div id="info2"></div>
-                <button id="myBtn">Fechar</button>
-            </div>
         </section>
     </main>
+    <div id="overlay" class=""></div>
+    <div id="modal">
+        <form>
+            <h3>Criar Equipes <box-icon id="btnClose" name='x'></box-icon></h3>
+            <label for="nome">Nome</label>
+            <input type="text" required placeholder="Digite um nome" id="equipe-nome">
+            <label for="equipe-qtd">Nº de participantes</label>
+            <input type="number" min="1" id="" required>
+            <button type="submit"></button>
+        </form>
+    </div>
     <footer>
 
     </footer>
