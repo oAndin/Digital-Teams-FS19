@@ -12,9 +12,20 @@
   font-family: "Montserrat", sans-serif;
 }
 
+::-webkit-scrollbar{
+  width: 0.5rem;
+  
+}
+::-webkit-scrollbar-thumb {
+  background-color: #250415;
+  border-radius: 3px;
+}
+
 :root {
+  --gray0:#555555;
   --gray1: #36393B;
   --gray2: #5c5c5c;
+  --gray3: #222222;
   --black: #000000;
   --pink: #33051c;
   --pink2: #751140;
@@ -26,11 +37,7 @@
 body {
   width: 100%;
   height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: initial;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, #250415 100%);
+  background-color: var(--gray3);
 }
 
 header {
@@ -143,7 +150,7 @@ header .search box-icon:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 16px;
+  padding: 8px;
   width: calc(20% - 13px);
   border-radius: 8px;
   transition: 0.7s ease-in-out;
@@ -170,6 +177,7 @@ backdrop-filter: blur( 20px );
 }
 
 #teams ul li h4 {
+  margin-top: 0.5rem;
   opacity: 0.7;
 }
 
@@ -184,9 +192,27 @@ backdrop-filter: blur( 20px );
   font-size: 50px;
   font-weight: normal;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #555;
+  background: linear-gradient(var(--gray0), transparent);
+}
+
+#teams ul li div h2 span {
+  font-size: 1rem;
+  display: block;
+  font-weight: bold;
 }
 
 #teams ul li div button {
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -200,6 +226,7 @@ backdrop-filter: blur( 20px );
   font-family: bold;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  margin-bottom: 0.5rem;
 }
 
 #teams ul li div button:hover {

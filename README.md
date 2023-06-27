@@ -4,3 +4,5 @@ Glassmophismo
 Background image
 Takes the colors from the bg img
 Transparency on the search bar
+Filter: blur on everything that isnt on focus
+Transform scale on everything

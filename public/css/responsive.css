@@ -46,7 +46,7 @@
 
 @media screen and (min-width:1024px) {
     #teams ul li {
-        width: calc(33% - 8px);
+        width: calc(20% - 13px);
     }
 }
 
