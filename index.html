@@ -25,60 +25,18 @@
                     <box-icon name='plus'></box-icon>
                 </button>
             </h3>
-            <ul>
-                <li>
-                    <h4>Nome da equipe</h4>
-                    <div class="infos">
-                        <h2>00 <span>/ 00</span></h2>
-                        <button>adicionar<box-icon name='plus'></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h4>Nome da equipe</h4>
-                    <div class="infos">
-                        <h2>00 <span>/ 00</span></h2>
-                        <button>adicionar<box-icon name='plus'></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h4>Nome da equipe</h4>
-                    <div class="infos">
-                        <h2>00 <span>/ 00</span></h2>
-                        <button>adicionar<box-icon name='plus'></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h4>Nome da equipe</h4>
-                    <div class="infos">
-                        <h2>00 <span>/ 00</span></h2>
-                        <button>adicionar<box-icon name='plus'></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h4>Nome da equipe</h4>
-                    <div class="infos">
-                        <h2>00 <span>/ 00</span></h2>
-                        <button>adicionar<box-icon name='plus'></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h4>Nome da equipe</h4>
-                    <div class="infos">
-                        <h2>00 <span>/ 00</span></h2>
-                        <button>adicionar<box-icon name='plus'></box-icon></button>
-                    </div>
-                </li>
+            <ul id="listaDeEquipe">
             </ul>
         </section>
     </main>
     <div id="overlay" class=""></div>
     <div id="modal">
-        <form>
+        <form onSubmit="criarEquipe()">
             <h3>Criar Equipes <box-icon id="btnClose" name='x'></box-icon></h3>
             <label for="nome">Nome</label>
-            <input type="text" required placeholder="Digite um nome" id="equipe-nome">
+            <input type="text" id="equipe-nome" placeholder="Digite um nome" required>
             <label for="equipe-qtd">Nº de participantes</label>
-            <input type="number" min="1" id="" required>
+            <input type="number" id="equipe-qtd" min="1" required>
             <button type="submit"></button>
         </form>
     </div>
