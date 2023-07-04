@@ -31,13 +31,13 @@
     </main>
     <div id="overlay" class=""></div>
     <div id="modal">
-        <form onSubmit="criarEquipe()">
+        <form id="formCriar" onSubmit="criarEquipe()">
             <h3>Criar Equipes <box-icon id="btnClose" name='x'></box-icon></h3>
             <label for="nome">Nome</label>
             <input type="text" id="equipe-nome" placeholder="Digite um nome" required>
             <label for="equipe-qtd">Nº de participantes</label>
             <input type="number" id="equipe-qtd" min="1" required>
-            <button type="submit"></button>
+            <button type="submit">Criar</button>
         </form>
     </div>
     <footer>
