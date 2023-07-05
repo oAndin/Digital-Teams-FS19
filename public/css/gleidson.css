@@ -161,10 +161,13 @@ backdrop-filter: blur( 20px );
 
 #teams ul li.sem-equipes {
   width: 100%;
-  height: 1rem;
   text-align: center;
   color: var(--white);
 }
+
+#teams ul li.sem-equipes:hover{
+  transform: none;  
+} 
 
 #teams ul li:hover {
   background-color: var(--pink2);

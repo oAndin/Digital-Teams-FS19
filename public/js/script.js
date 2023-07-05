@@ -18,10 +18,10 @@ btnClose.onclick = function () {
 let equipes = JSON.parse(localStorage.getItem('equipes')) || [];
 
 function listarEquipe() {
-    listaDeEquipe.innerHTML = '';
-    if (equipes.length > 0) {
+    listaDeEquipes.innerHTML = '';
+    if (equipes.length != 0) {
         for (let i = 0; i < equipes.length; i++) {
-            listaDeEquipe.innerHTML += 
+            listaDeEquipes.innerHTML += 
             `<li>
             <h4>${equipes[i].nome}</h4>
                 <div class="infos">
@@ -32,11 +32,12 @@ function listarEquipe() {
                     </div>
                 </div>
             </li>`;
-        }
+        }   
     }
-    else {
-        listaDeEquipe.innerHTML = 
-        `<li class="sem-equipes">Crie sua primeira equipe!</li>`
+    else{
+        listaDeEquipes.innerHTML = `
+            <li class='sem-equipes'>Crie sua primeira equipe!</li>
+        `;
     }
 }
 
