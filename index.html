@@ -33,11 +33,21 @@
     <div id="overlay" class=""></div>
     <div id="modal">
         <form id="formCriar" onSubmit="criarEquipe()">
-            <h3>Criar Equipes <box-icon id="btnClose" name='x'></box-icon></h3>
+            <h3>Criar Equipes <box-icon class="fecharModal" name='x'></box-icon></h3>
             <label for="nome">Nome</label>
             <input type="text" id="equipe-nome" placeholder="Digite um nome" required>
             <label for="equipe-qtd">Nº de participantes</label>
             <input type="number" id="equipe-qtd" min="1" required>
+            <button type="submit">Criar</button>
+        </form>
+    </div>
+
+    <div id="modal2">
+        <form id="formAddParticipante" onSubmit="addParticipante()">
+            <h3>Adicionar participantes<box-icon class="fecharModal" name='x'></box-icon></h3>
+            <input type="hidden" id="equipeId">
+            <label for="participante-nome">Nome</label>
+            <input type="text" id="participante-nome" placeholder="Digite um nome" required>
             <button type="submit">Criar</button>
         </form>
     </div>

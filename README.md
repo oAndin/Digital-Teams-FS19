@@ -2,7 +2,8 @@
 
 A project with JavaScript 
 
-Need to remember to create the issues instead of write on the Readme
+Need to remember to create issues instead of write on the Readme
+Still
 
 Glassmophismo
 Background image
