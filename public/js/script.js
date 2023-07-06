@@ -87,3 +87,4 @@ function deletarEquipe(posicao) {
     localStorage.setItem('equipes', JSON.stringify(equipesSalvas));
     listarEquipe();
 };
+listarEquipe();
